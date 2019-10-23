@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--books/templates/books/book-create.html-->
+
+  <form method="post" enctype="multipart/form-data" action="">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+
+        <input type="submit" value="Update"/>
+    </form>
+</form>
+
+</body>
+</html>

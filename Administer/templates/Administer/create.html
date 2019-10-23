@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+{%extends "Administer/base.html"%}
+{%block content%}
+{% load crispy_forms_tags %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Create</title>
+</head>
+<body>
+    <!--books/templates/books/book-create.html-->
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center">
+        <div class="col-10">
+  <form method="post">
+        {% csrf_token %}
+            {{ form|crispy }}
+
+        <input type="submit" value="Submit"/>
+    </form>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
+{%endblock%}

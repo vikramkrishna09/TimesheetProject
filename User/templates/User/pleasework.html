@@ -1,0 +1,23 @@
+{%extends "User/base.html"%}
+{%block content%}
+{% load crispy_forms_tags %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Create timecard
+        </div>
+        <div class="card-body">
+             {% crispy form %}
+            <style>
+                .errorlist {
+            list-style: none;
+            font-size: 0%
+            }
+            </style>
+
+        </div>
+    </div>
+</div>
+{%endblock%}
